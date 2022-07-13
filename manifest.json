@@ -1,0 +1,21 @@
+{
+
+    "manifest_version": 3,
+    "name": "selenium-plugin",
+    "version": "1.0",
+  
+    "description": "Adds a red border to all webpages matching mozilla.org.",
+  
+    "background": {
+        "service_worker": "event.js"
+      },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*/"],
+        "js": ["register.js"]
+      }
+    ]
+    
+  
+  }
